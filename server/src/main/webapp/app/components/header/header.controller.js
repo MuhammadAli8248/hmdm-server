@@ -53,9 +53,9 @@ angular.module( 'headwind-kiosk' )
     } );
 
     rebranding.query(function(value) {
-        $scope.appName = value.appName;
+        $scope.appName = "BlueBox";
     });
-
+    
     updateDateTime = function() {
         $scope.dateTime = $filter( 'date' )( new Date(), localization.localize('format.date.header') );
     };
